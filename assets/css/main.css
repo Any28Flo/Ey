@@ -1,0 +1,15 @@
+body {
+  height: 100%;
+  width: 100%; }
+
+.whiteText {
+  color: white; }
+
+#splashBackground {
+  background-color: #009ecc;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+/*# sourceMappingURL=main.css.map */

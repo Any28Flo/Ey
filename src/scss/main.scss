@@ -1,0 +1,23 @@
+@import 'colores';
+
+
+
+body {
+	height: 100%;
+	width: 100%
+}
+
+.whiteText{
+	color: white;
+}
+
+//SPLASH
+#splashBackground {
+	background-color: $azul;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
