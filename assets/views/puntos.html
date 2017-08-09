@@ -5,7 +5,7 @@
 	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:900i" rel="stylesheet">
 
@@ -17,14 +17,42 @@
 
 
 	<section id="puntos">
+
+
 		<div class="container">
 
+			<h4>En <strong>EY</strong> nos gusta trabajar en equipo por eso queremos darte 200 pts para que le puedas regalar a otros compañeros</h4>
+
+			<form>
+				<div class="input-field">
+					<input id="search" type="search" required placeholder="Busca al alguien">
+					<i class="material-icons">close</i>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						Tus puntos: <span id="tusPtsRegalo">200</span> pts
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						Cuantos puntos:
+						<div class="input-field inline">
+							<input id="puntosOtorgados" type="number" placeholder="Puntos">
+						</div>
+					</div>
+				</div>
+
+				<a class="waves-effect waves-light btn-large">Enviar Puntos</a>
+			</form>
 		</div>
+
 	</section>
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+	<script type="text/javascript" src="../js/materialize.min.js"></script>
 	<script src="assets/js/splash.js"></script>
 </body>
 
