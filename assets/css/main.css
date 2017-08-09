@@ -1,15 +1,26 @@
-body {
+body, html {
   height: 100%;
   width: 100%; }
 
 .whiteText {
   color: white; }
 
+.yellowText {
+  color: #fff435; }
+
+.blackShadow {
+  text-shadow: 4px 4px black; }
+
 #splashBackground {
-  background-color: #009ecc;
+  background-image: url("../../assets/img/1263.jpg");
+  background-size: cover;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
+
+.splash_img {
+  width: 50%; }
 
 /*# sourceMappingURL=main.css.map */

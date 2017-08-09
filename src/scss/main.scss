@@ -2,7 +2,7 @@
 
 
 
-body {
+body ,html{
 	height: 100%;
 	width: 100%
 }
@@ -11,13 +11,27 @@ body {
 	color: white;
 }
 
+.yellowText{
+	color: $amarillo;
+}
+
+.blackShadow{
+	text-shadow: 4px 4px black;
+}
+
 //SPLASH
 #splashBackground {
-	background-color: $azul;
+	background-image: url("../../assets/img/1263.jpg");
+	background-size: cover;
 	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	
+}
+
+.splash_img{
+	width: 50%;
 }
 
