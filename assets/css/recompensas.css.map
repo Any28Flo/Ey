@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,kBAAkB;EAChB,gBAAgB,EAJD,OAAO",
+"sources": ["../../src/scss/recompensas.scss"],
+"names": [],
+"file": "recompensas.css"
+}
