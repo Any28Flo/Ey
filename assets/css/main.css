@@ -11,6 +11,9 @@ body, html {
 .blackShadow {
   text-shadow: 4px 4px black; }
 
+.greyText {
+  color: grey; }
+
 #splashBackground {
   background-image: url("../../assets/img/1263__op.jpg");
   background-size: cover;
