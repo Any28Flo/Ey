@@ -1,13 +1,12 @@
   // Initialize Firebase
   var config = {
-  	apiKey: "AIzaSyC1F-frBdAU_Hm8TgZ6GuS9HDedgDGfn5o",
-  	authDomain: "hacer-login-6c332.firebaseapp.com",
-  	databaseURL: "https://hacer-login-6c332.firebaseio.com",
-  	projectId: "hacer-login-6c332",
-  	storageBucket: "hacer-login-6c332.appspot.com",
-  	messagingSenderId: "31841737069"
+      apiKey: "AIzaSyB9c-FFxeo0MEDb8U230jBWVcMFo9rUGXQ",
+      authDomain: "eydatabase.firebaseapp.com",
+      databaseURL: "https://eydatabase.firebaseio.com",
+      projectId: "eydatabase",
+      storageBucket: "eydatabase.appspot.com",
+      messagingSenderId: "584479342890"
   };
-
   firebase.initializeApp(config);
 
   var loggearConFacebook = function () {
@@ -28,7 +27,7 @@
   		// The signed-in user info.
   		var user = result.user;
   		console.log(user.displayName)
-  		
+
 
   	}).catch(function (error) {
   		// Handle Errors here.
@@ -44,4 +43,3 @@
   }
   document.getElementById("logF").addEventListener("click", loggearConFacebook)
   document.getElementById("logG").addEventListener("click", loggearConGoogle)
-
