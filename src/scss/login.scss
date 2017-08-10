@@ -1,0 +1,41 @@
+$colorAmarillo : #fff435;
+$colorBlanco : #fff;
+$colorAzul: #009ecc;
+$colorGris : ·#6e8ea3;
+$ancho: 100%;
+$alto : 100vh;
+.contenedorLog{
+  height: $alto;
+  width: $ancho;
+  background-color: $colorAmarillo;
+
+  font-family: 'Roboto', sans-serif;
+
+  img{
+    width: $ancho - 55%;
+  }
+}
+.botones{
+  //  margin-top: $alto - 50vh;
+  i{
+    color: black ;
+    background-color: $colorAzul;
+    text-align: center;
+    width: $ancho;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
+
+  }
+}
+
+.contenedorLogIn{
+  border:  2px solid $colorBlanco;
+  background-color: $colorBlanco;
+  margin-top: 15vh;
+}
+.registro{
+  margin-top: 15px;
+}
