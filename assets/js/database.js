@@ -12,11 +12,12 @@ firebase.initializeApp(config);
 var recompensasDb = {
   recompensas:[]
 
+
 }
 var x = document.getElementById("myFile");
  x.disabled = false;
 
- var enviaFormularioRecompensa  = document.getElementById("formulario_recompensas");
+var enviaFormularioRecompensa  = document.getElementById("formulario_recompensas");
 
  enviaFormularioRecompensa.addEventListener("submit",function(event){
    event.preventDefault();
@@ -38,11 +39,11 @@ var x = document.getElementById("myFile");
        "archivo": archivo
      }
    );
-  //  enviaDatos(recompensasDb);
+   enviaDatos(recompensasDb);
  })
 
-var enviaDatos = function (recompensasDb){
-  database.ref("/").set(recompensasDb)
+var enviaDatos = function (recompensas){
+  database.ref("/recompensas").set(recompensasDb)
 }
 
 var database = firebase.database();
