@@ -8,7 +8,7 @@ var config = {
 };
 //Initialize firebase app
 firebase.initializeApp(config);
-//creA EL OBJETO
+
 var usuariosDb = {
   usuarios:[]
 
@@ -44,9 +44,7 @@ var registroUsuario = document.getElementById("registroNuevoUsuario");
 
  var database = firebase.database();
 
-
- database.ref('/usuarios').on('value',function(snapshot){
- 	var usuarios = snapshot.val();
+database.ref('/usuarios').on('value',function(snapshot){
+	 var usuarios = snapshot.val();
    usuariosDb.usuarios = usuarios;
-
- });
+});

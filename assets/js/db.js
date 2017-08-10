@@ -10,18 +10,30 @@ var config = {
 // Initialize your Firebase app
 firebase.initializeApp(config);
 
-var recompensas = firebase.database().ref("recompensas");
-var usuarios     = firebase.database().ref("Usuarios");
 
-var insertaUsuario = function(){
+var usuariosDb = {
+  usuarios:[],
+  recompensas: []
+
+
+}
+
+
+var recompensas = firebase.database().ref("recompensas");
+var usuarios     = firebase.database().ref("usuarios");
+
+var insertaUsuario = function(e){
+  e.preventDefault();
+  alert("hola mundo");
+
   var nombre = $("#nombre").val();
   var apellido = $("#apellidos").val();
   var email = $("#email").val();
-  var constrasena = $("#constrasena").val();
+  var constrasena = $("#contrasena").val();
   var direccion = $("#direccion").val();
   // var x = document.getElementById("estado").selectedIndex;
   // var estado = document.getElementsByTagName("option")[x].value;
-  usuarios.push({
+  usuarios.set({
     "nombre": nombre,
     "apellido":apellido,
     "email":email,
@@ -29,11 +41,13 @@ var insertaUsuario = function(){
     "direccion": direccion
     // "estado": estado
   });
+  setTimeout(function(){location.href="../views/principal.html" }, 1000);
+
 };
 
 
-var enviaRecompensa = function () {
-
+var enviaRecompensa = function (e) {
+  e.preventDefault();
   var categoriaRecompensa = $("#categoriaRecompensa").val();
   var recompensa = $("#recompensa").val();
   var descripcionRecompensa = $("#descripcionRecompensa").val();
@@ -50,7 +64,7 @@ var enviaRecompensa = function () {
 };
 
 $(window).load(function () {
-  //s $("#formulario_recompensas").submit(enviaRecompensa);
+  $("#formulario_recompensas").submit(enviaRecompensa);
   $("#registroNuevoUsuario").submit(insertaUsuario);
 
 });
