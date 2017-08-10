@@ -13,7 +13,8 @@ var recompensasDb = {
   recompensas:[]
 
 }
-
+var x = document.getElementById("myFile");
+ x.disabled = false;
 
  var enviaFormularioRecompensa  = document.getElementById("formulario_recompensas");
 
@@ -23,15 +24,21 @@ var recompensasDb = {
    var recompensa = document.getElementById("recompensa").value;
    var descripcionRecompensa = document.getElementById("descripcionRecompensa").value;
    var valorPuntos = document.getElementById("valorPuntos").value;
+   var reembolsable = document.getElementById("reembolsable").value;
+
+   var archivo = document.getElementById("myFile").value;
+   console.log(archivo);
    recompensasDb.recompensas.push(
      {
        "categoriaRecompensa": categoriaRecompensa,
        "recompensa":recompensa,
        "descripcionRecompensa": descripcionRecompensa,
-       "valorPuntos":valorPuntos
+       "valorPuntos":valorPuntos,
+       "reembolsable":reembolsable,
+       "archivo": archivo
      }
    );
-   enviaDatos(recompensasDb);
+  //  enviaDatos(recompensasDb);
  })
 
 var enviaDatos = function (recompensasDb){
