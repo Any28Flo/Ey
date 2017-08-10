@@ -6,6 +6,7 @@
   .contenedorLog img {
     width: 45%; }
 
+
 .botones i {
   color: black;
   background-color: #009ecc;
@@ -15,6 +16,7 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 25px; }
+
 
 .contenedorLogIn {
   border: 2px solid #fff;
