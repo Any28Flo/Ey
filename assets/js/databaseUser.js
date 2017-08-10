@@ -24,17 +24,18 @@ var registroUsuario = document.getElementById("registroNuevoUsuario");
    var direccion = document.getElementById("direccion").value;
    var x = document.getElementById("estado").selectedIndex;
    var estado = document.getElementsByTagName("option")[x].value;
-   usuariosDb.usuarios.push(
-   {
-     "nombre": nombre,
-     "apellido":apellido,
-     "email":email,
-     // "constrasena": constrasena,
-     "direccion": direccion,
-     "estado": estado
-   }
- );
- enviaDatos(usuariosDb);
+ //   usuariosDb.usuarios.push(
+ //   {
+ //     "nombre": nombre,
+ //     "apellido":apellido,
+ //     "email":email,
+ //     // "constrasena": constrasena,
+ //     "direccion": direccion,
+ //     "estado": estado
+ //   }
+ // );
+ // enviaDatos(usuariosDb);
+ setTimeout(function(){location.href="../views/principal.html" }, 1000);
 
  })
  var enviaDatos = function (usuarios){
